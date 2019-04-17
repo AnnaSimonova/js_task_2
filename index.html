@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add skills</title>
+    <link rel='stylesheet' href="./style.css">
+</head>
+<body>
+<main>
+    <h1>Skills</h1>
+    <form onsubmit="addSkill(skill_name.value, skill_range.value); return false;">
+        <p><label>Skill name:</label>
+            <input type="text" name="skill_name" maxlength="100" placeholder="Enter skill name (up to 100 characters)" required></p>
+        <p><label>Skill range:</label>
+            <input type="number" min="1" max="100" name="skill_range" placeholder="Enter skill range from 1 to 100" required></p>
+        <button class="button">Add skill</button>
+    </form>
+    <div class="skill-ranges">
+        <div class="skill-range">HTML</div>
+        <div class="skill-range" style="width:70%">CSS</div>
+    </div>
+    <div class="range-outer"><div class="range-inner"></div></div>
+    <div class="range-level">
+        <span>Beginner</span>
+        <div>
+            <span>Proficient</span>
+            <span>Expert</span>
+        </div>
+        <span>Master</span>
+    </div>
+</main>
+<script src="./action.js"></script>
+</body>
+</html>
